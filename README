@@ -4,7 +4,7 @@ Ldcopy is a small program to copy (tree) all shared library of binary
 program to destination directory or chroot.
 
 ------------------------------------------------------------------------
-age: ./ldcopy PATH_TO_PROGRAM ROOT_PATH
+Example: ./ldcopy PATH_TO_PROGRAM ROOT_PATH
 
 Description:
 	Copy library or set library to chroot. If is library install
