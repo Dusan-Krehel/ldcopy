@@ -1,0 +1,38 @@
+------------------------------------------------------------------------
+
+Ldcopy is a small program to copy (tree) all shared library of binary
+program to destination directory or chroot.
+
+------------------------------------------------------------------------
+age: ./ldcopy PATH_TO_PROGRAM ROOT_PATH
+
+Description:
+	Copy library or set library to chroot. If is library install
+	in ROOT_PATH in another version, then create symbol linkon
+	existing library.
+
+Arguments:
+	PATH_TO_PROGRAM:
+	   - Full path to binary program, where will copy library
+
+	ROOT_PATH:
+	   - Root path, where will then store library
+	   - If no exist, then will created.
+
+Version: 0.2
+
+Example:
+	./ldcopy /bin/bash /tmp/
+
+Contact:
+	chrootlinux@krehel.sk
+
+------------------------------------------------------------------------
+Developing:
+
+- Do later:
+	If you have in destination ROOT 2 versions of one library. Program
+	don't create 100% in every time symbolic links on latest version
+	of library. Dosn't deteck version of libraries, only detect name
+	of libraries.
+
